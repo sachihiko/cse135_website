@@ -25,6 +25,6 @@ jobs:
           username: ${{secrets.SSH_USERNAME}}
         
           script: |
-            cd /vaw/www/sachihiko.site
-            git clone git@github.com:sachihiko/cse135_website.git public_html
+            cd /var/www/sachihiko.site/public_html
+            git pull && git fetch
             echo 'Deployment successful'
