@@ -1,2 +1,2 @@
 User-agent: Googlebot
-Disallow: /restricted.html
+Disallow: /private/
