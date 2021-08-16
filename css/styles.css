@@ -5,12 +5,22 @@ h2 {
     margin-bottom: 0px;
 }
 h3 {
+    margin-top: 0px;
     margin-bottom: 0px;
+}
+h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
 }
 p {
     margin-top: 0px;
 }
 ul {
     margin-top: 0px;
+    display: inline-block;
 }
   
+.hw2-languages{
+display: block;
+}
