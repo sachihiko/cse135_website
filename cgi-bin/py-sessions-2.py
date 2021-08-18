@@ -6,9 +6,9 @@ print("Content-type: text/html\n")
 print("<html><head><title>Python Sessions</title></head><body>")
 print("<h1>Python Sessions Page 2 </h1>")
 
-cookie = os.environ['HTTP_COOKIE']
-if cookie and cookie != 'destroyed':
-    print(f'Cookie: {cookie}')
+# cookie = os.environ['HTTP_COOKIE']
+if os.environ['HTTP_COOKIE'] and os.environ['HTTP_COOKIE'] != 'destroyed':
+    print(f'Cookie: {os.environ['HTTP_COOKIE']}')
 else:
     print('Cookie: None')
 
