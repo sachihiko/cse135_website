@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-import request
+import html
+import os
 import datetime
 
 now = datetime.datetime.now()
 current_time = now.strftime("%Y-%m-%d %H:%M:%S")
-client_ip = request.environ.get('REMOTE_ADDR')
+client_ip = html.escape(os.environ["REMOTE_ADDR"])
 print(f'''
 <html>
 <head><title>Hello World - plz work</title></head>
