@@ -10,10 +10,8 @@ print("Content-type: text/html\n")
 print("<html><head><title>Python Sessions</title></head><body>")
 print("<h1>Python Sessions Page 1 </h1>")
 
-name = form['username'].value
-
-if name:
-    print(f"<p><b>Name:</b> {name}")
+if form['username']:
+    print(f"<p><b>Name:</b> {form['username']}")
 else:
     print("<p><b>Name:</b> You do not have a name set</p>")
 
