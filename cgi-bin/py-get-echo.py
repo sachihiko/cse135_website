@@ -9,9 +9,11 @@ print("<html><head><title>GET Request Echo</title></head>"
 
 query_str = os.environ['QUERY_STRING']
 
-print(f"<b>Query  String:</b>  {query_str}\n")
+print(f"<b>Query String:</b>  {query_str}<br/><br/>")
+print("<table> Formatted Query String:")
+
 if len(query_str) > 0:
     query_list = parse_qsl(query_str)
 for k, v in query_list:
-    print(f"{k}: {v}<br/>")
-print("</body></html>")
+    print(f"<tr><td>{k}:</td><td>{v}</td></tr><br/>")
+print("</table></body></html>")
