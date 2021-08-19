@@ -9,7 +9,7 @@
     <body>
         <h1 align="center">Environment Variables</h1>
         <?php 
-        $vars = $_ENV
+        $vars = array('a' => 'A', 'b' => 'B');
         foreach ($vars as $key => $value) {
             echo "<b>$key:</b> $value<br/>\n";
         }
