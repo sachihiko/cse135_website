@@ -4,10 +4,10 @@
     header("Content-type: text/html\n\n");
     ?>
     <head>
-        <title>POST Request Echo</title>
+        <title>General Request Echo</title>
     </head>
     <body>
-        <h1 align="center">POST Request Echo</h1>
+        <h1 align="center">General Request Echo</h1>
 <?php
         $protocol = $_SERVER['SERVER_PROTOCOL'];
         $method = $_SERVER['REQUEST_METHOD'];
