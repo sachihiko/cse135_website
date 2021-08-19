@@ -4,17 +4,20 @@ import cgitb
 
 cgitb.enable()
 form = cgi.FieldStorage()
+name = ''
 
 print("Cache-Control: no-cache")
-if 'username' in form:
-    print(f"Set-Cookie: username={form['username'].value}")
-
 print("Content-type: text/html\n")
+
+if 'username' in form:
+    name = form['username'].value
+    print(f"Set-Cookie: {name}")
+
 print("<html><head><title>Python Sessions</title></head><body>")
 print("<h1>Python Sessions Page 1 </h1>")
 
 if 'username' in form:    
-    print(f"<p><b>Name:</b> {form['username'].value}")
+    print(f"<p><b>Name:</b> {name}")
 else:
     print("<p><b>Name:</b> You do not have a name set</p>")
 
