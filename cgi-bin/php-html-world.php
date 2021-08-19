@@ -1,10 +1,9 @@
-#!/usr/bin/php 
-<?php  
-echo "Cache-Control: no-cache\n";
-echo "Content-type: text/html\n\n";
-?>
-
 <html>
+    <?php  
+    header("Cache-Control: no-cache\n");
+    header("Content-type: text/html\n\n");
+    ?>
+
     <head>
         <title>Hello, PHP!</title>
     </head>
