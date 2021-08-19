@@ -10,8 +10,9 @@
     <body>
         <h1 align="center">Environment Variables</h1>
         <?php 
-        foreach ($_ENV as $key => $value) {
-            echo "<b>{$key}:</b> {$value}<br/>\n ";
+        $vars = getenv()
+        foreach ($vars as $key => $value) {
+            echo "<b>$key:</b> value<br/>\n";
         }
         ?>
     </body>
