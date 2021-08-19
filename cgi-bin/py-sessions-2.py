@@ -13,7 +13,7 @@ else:
     print('Cookie: None')
 
 print("<br />")
-print("<a href=\"/cgi-bin/py-sessions-1.py\">Session Page 1</a>");
+print("<a href=\"/cgi-bin/py-sessions-1.py\">Session Page 1</a>")
 print("<br />")
 print("<a href=\"/py-cgiform.html\">Python CGI Form</a>")
 print("<br /><br />")
