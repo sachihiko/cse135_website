@@ -27,5 +27,5 @@ jobs:
           script: |
             cd /var/www/sachihiko.site/public_html
             git pull && git fetch
-            chmod a+x cgi-bin/*
+            cp -R reporting /var/www/reporting.sachihiko.site/public_html
             echo 'Deployment successful'
